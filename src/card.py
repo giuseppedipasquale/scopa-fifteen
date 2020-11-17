@@ -33,6 +33,9 @@ Class that represents a card object.
         print("Error: suit must be either Cups, Golds, Cubs or Swords")
     else:
       print("Error: number must be string")
+      
+  def show(self):
+      print(self.number," of ",self.suit)
   
   
 
