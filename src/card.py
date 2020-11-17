@@ -34,4 +34,14 @@ Class that represents a card object.
     else:
       print("Error: number must be string")
   
+  
+
+Deck = []
+suits = ["Cups","Golds","Cubs","Swords"]
+for j in suits:
+    for i in range(1,11):
+        Deck.append(Card(i,j))
+
+for card in Deck:
+    card.show()
     
