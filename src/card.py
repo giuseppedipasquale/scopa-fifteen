@@ -38,13 +38,17 @@ Class that represents a card object.
       print(self.number," of ",self.suit)
   
   
+  
+class Deck:
+"""
+Class that represents a deck of cards.
+"""
+  def __init__(self):
+    self.cards = []
+    suits = ["Cups","Golds","Cubs","Swords"]
+    for j in suits:
+      for i in range(1,11):
+        self.cards.append(Card(i,j))
 
-Deck = []
-suits = ["Cups","Golds","Cubs","Swords"]
-for j in suits:
-    for i in range(1,11):
-        Deck.append(Card(i,j))
-
-for card in Deck:
-    card.show()
-    
+  
+  
